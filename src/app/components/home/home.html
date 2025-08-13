@@ -1,0 +1,10 @@
+<p>home works !</p>
+
+@if (deveMostrarTitulo) {
+<p>O titulo é: {{ title }}</p>
+} @else {
+<p>Não há titulo</p>
+}
+
+<button (click)="atualizarTitulo('Novo titulo')">Atualizar titulo</button>
+<button (click)="mostrarTitulo()">Mostrar titulo</button>
