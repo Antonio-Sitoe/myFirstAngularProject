@@ -10,6 +10,7 @@ import { Enviaformulario } from '../../services/enviaformulario';
 })
 export class Home {
   private enviaService = inject(Enviaformulario);
+  exibeFooter: boolean = false;
 
   @Input() minhaPropriedade!: string;
   @Output() emitindo = new EventEmitter<string>();
